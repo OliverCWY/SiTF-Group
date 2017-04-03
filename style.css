@@ -84,3 +84,6 @@ h1 {
 	top: 55px;
 	left: 50px;
 }
+.mdl-layout--fixed-header{
+	margin:0
+}
