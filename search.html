@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html style="overflow-y:hidden">
+	<head>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script>
+    	    window.onload=function(){
+        	    document.getElementById('list').style.height=window.innerHeight-
+        	    (oliverC.getTop(document.getElementById("value"))+21)+"px";
+    	        layout();
+    	    };
+    	    resize=function(){
+    	        document.getElementById('searchingBox').style.left=oliverC.getLeft(document.getElementById('searchingBar'))+17+"px";
+        	    document.getElementById('list').style.height=window.innerHeight-
+        	    (oliverC.getTop(document.getElementById("value"))+21)+"px";
+    	    }
+    	</script>
+    	<style>
+    	    ul#list{
+	            list-style-type: none;
+    	    }
+    	    ul#list li{
+    	        margin-left:-38px;
+    	    }
+    	    input{
+    	        width:100%;
+    	        font-size:15px;
+    	        text-align:center;
+    	        border:1px solid #DDD;
+    	    }
+    	</style>
+	</head>
+	<body>
+    	<h3 id="titlea" style="text-align:center">Search tor topic here!</h3>
+    	<input id="value" oninput="oliverC.filt('#list', 'a', this.value)" placeholder="Search for topics here">
+        </div>
+        <div style="width:100%;text-align:center;overflow-y:scroll">
+    	    <ul id="list">
+            </ul>
+        </div>
+        <script>
+            fillSearch("list");
+        </script>
+    </body>
+</html>

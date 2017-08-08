@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Further Readings</title>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script>
+    	    window.onload=layout;
+    	</script>
+    	<style>
+    		#ul{
+    			list-style-type:none;
+    		}
+    		#ul li{
+    			margin-left:-40px;
+    		}
+    	</style>
+	</head>
+	<body>
+	    <h1 id="heading">Further Readings</h1>
+	    <p style="font-size:17px">&nbsp; &nbsp; A page for students who are interested in Maths learning and eager to find out more</p>
+	    <ul id="ul" style=""></ul>
+	    <script>
+	        var L=["Cubic Graph","Factor Theory"];
+			for(var i=0;i<L.length;i++)
+				document.getElementById("ul").innerHTML+="<li>"+CBL(L[i],L[i]+".html",30)+"</li>";
+	    </script>
+    </body>
+</html>

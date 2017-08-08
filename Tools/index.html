@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Maths Tools</title>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script>
+    	    window.onload=layout;
+    	</script>
+    	<style>
+    		#ul{
+    			list-style-type:none;
+    		}
+    		#ul li{
+    			margin-left:-40px;
+    		}
+    	</style>
+	</head>
+	<body>
+	    <h1 id="heading">Maths Tools</h1>
+	    <p style="font-size:17px">&nbsp; &nbsp; To make it easier for you to learn, </p>
+	    <ul id="ul" style="">
+	    </ul>
+	    <script>
+	        var L=["Visit this page and try out factorisation yourself!",
+	        	  "Solve all the roots for any polynomial!"],
+	            Lnk=["https://pipix51.github.io/DHSY2-Math-Webapp/multiplication","Factorisation"];
+			for(var i=0;i<L.length;i++)
+				document.getElementById("ul").innerHTML+="<li>"+CBL(L[i],Lnk[i]+".html")+"</li>";
+	    </script>
+    </body>
+</html>

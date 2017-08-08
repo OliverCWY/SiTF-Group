@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <title>Factor Theory</title>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+    	<script>
+    	    window.onload=layout;
+    	</script>
+	</head>
+	<body>
+	    <h1 id="heading">Is Factor Theorm capable to find all the real roots for integral equations?</h1>
+		<div>
+		    Factor Theorm is a theory to factorize polynomials and solve integral eqations that students learn in Year 3.<br>
+		    <br>
+		    For any polynomial `P(x)=ax^n+bx^(n-1)+...+z`, if `P(k)=0`, where `k in {r/s:r,s in ZZ, r|z, s|a}`, `(x-k)` is a factor of `P(x)` and vise versa.
+		    <br>
+		    The question now is: can it give us all the real roots of any integral equation?<br>
+		    <br>
+		    Surprisingly, yes, but why?<br>
+		    <br>
+		    [Proof]<br>
+		    For a eqation `ax^n+bx^(n-1)+...+z=0`, we divide it by `a`.<br>
+		    Then we get `x^n+b/ax^(n-1)+...+z/a=0`.<br>
+		    Considering a rational root of this eqation, `r/s` where `r,s in ZZ and (r,s)=1`, we can transform the eqation into `(x-r/s)(x^(n-1)+Bx^(n-2)+...+Z)=0`.<br>
+		    `Z` can be expressed as `p/q` where `p,q in ZZ and (p,q)=1`, as it is a rational number.<br>
+		    By inspection, `r/s*Z=z/a`, meaning that `(r*p)/(s*q)=z/a`.<br>
+		    Since `r, p, s, q, z, a` are all integers and `(r,s)=(p,q)=1`, `r*p` is a factor of `z` and `s*q` is a factor of `a`.<br>
+		    Hence, `r|z and s|a`. (Proven)
+    	</div>
+    </body>
+</html>
