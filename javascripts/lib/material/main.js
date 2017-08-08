@@ -57,11 +57,15 @@ oliverC.resize=function(){
     document.getElementById("container1").style.width=document.getElementById("container2").offsetWidth+18+"px";
     if(document.body.clientWidth<=500){
         if(document.body.clientWidth<=350)searchWidth="150px"; else searchWidth="200px";
-        $("#heading").css("font-size","20px");
+        $("#heading").css("font-size","30px");
+        $(".resTitle").css("font-size","30px");
+        $(".resHeading").css("font-size","20px");
         oliverC.blockfs=15;
     }else{
         searchWidth="300px";
         $("#heading").css("font-size","50px")
+        $(".resTitle").css("font-size","50px");
+        $(".resHeading").css("font-size","30px");
         oliverC.blockfs=30;
     }
     $("#searchingBox").css("width",searchWidth);
@@ -75,7 +79,8 @@ oliverC.block=function(){
     var objs=document.getElementsByClassName("block"),obj;
     for(var i=0;i<objs.length;i++){
         obj=objs[i];
-        obj.style.padding=parseInt(obj.style.fontSize)*0.4+"px";
+        obj.style.padding=parseInt($(obj).css("font-size"))*0.4+"px";
+        obj.style.marginTop="0px";
     }
 }
 oliverC.filt=function(id,tag,filter){

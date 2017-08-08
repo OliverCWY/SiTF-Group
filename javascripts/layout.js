@@ -1,8 +1,8 @@
 document.write('<link rel="stylesheet" href="/css/material.css">');
 function CBL(con,lnk,fs){
-    if(fs)return '<a class="block" href="'+lnk+'" style="font-size:'+fs+'px">'+con+'</a>';
-    else if(document.body.clientWidth<=500)return '<a class="block" href="'+lnk+'" style="font-size:18px">'+con+'</a>';
-        else return '<a class="block" href="'+lnk+'" style="font-size:30px">'+con+'</a>';
+    if(fs)return '<a class="block" href="'+lnk+'" style="font-size:'+fs+'px" class=>'+con+'</a>';
+    else /*if(document.body.clientWidth<=500)*/return '<a class="block" href="'+lnk+'" class="resHeading">'+con+'</a>';
+        //else return '<a class="block" href="'+lnk+'" style="font-size:30px">'+con+'</a>';
 }
 var base='  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"> \
                 <header class="mdl-layout__header"> \

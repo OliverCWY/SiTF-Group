@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <title>Rational Numbers</title>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+    	<script>
+    	    window.onload=layout;
+    	</script>
+	</head>
+	<body>
+	    <h1 id="heading">Why is the property of `(p,q)=1` important in the defination of rational numbers?</h1>
+	    <div>
+    	    As mentioned in the Factors and Multiples page, the defination of rational numbers is that a number which can be expressed in the form `p/q` where `p,q in ZZ` and `(p,q)=1` is a rational number.<br>
+    	    This may seem obvious: any two integers are either relatively-prime or otherwise. If they are relatively-prime, `(p,q)` is `1` already; if they are not, simply devide each number by the highest common factor and the new numbers are relatively-prime.<br>
+    	    However, this property is important in some ways. For example, prove that `sqrt(2)` is a irrational number.<br>
+			<a class="resHeading block causeSlideOnClick" href="javascript:void(0)" target="hint" style="color:red">[Hint]</a>
+			<div id="hint" class="hide block">
+			    `sqrt(2)=2`.<br>
+			    It is hard to prove that `sqrt(2)` is a irrational number directly; however, we can prove that it is not a rational number and hence it is a irrational number.
+			    So firstly we can assume that `sqrt(2)` is a rational number and prove that it is wrong.
+    		</div> 
+			<a class="resHeading block causeSlideOnClick" href="javascript:void(0)" target="proof">[Proof]</a>
+			<div id="proof" class="hide block">
+			    Assume that `sqrt(2)` is a rational number and `sqrt(2)=p/q` where `p,q in ZZ` and `(p,q)=1`.<br>
+			    Since `(sqrt(2))^2=2`,<br>
+			    `(p/q)^2=2`, meaning that `p^2=2q^2`.<br>
+			    Also `(p,q)=1`,<br>
+			    so `2|p^2` and therefore `2|p` (property of square).<br>
+			    `:.4|p^2`.<br>
+			    Considering `p^2=2q^2`, `4|2q^2`.<br>
+			    `:.2|q^2` and therefore `2|q`.<br>
+			    Since `2|p` and `2|q`,<br>
+			    `(p,q)=2k` where `k in ZZ and k >= 1`,<br>
+			    which contradicts with the condition `(p,q)=1`.<br>
+			    Hence, the assumption is wrong, `sqrt(2)` is a irrational number.<br>
+			    Did you get it? :P<br>
+    		</div>
+    	</div>
+    </body>
+</html>

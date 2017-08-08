@@ -9,24 +9,31 @@
     	</script>
 	</head>
 	<body>
-	    <h1 id="heading">Why do cubic graph have rotational centers?</h1>
+	    <h1 id="heading" class="resTitle">Why do cubic graph have rotational centers?</h1>
 		<div>
 			A cubic graph is a graph which equation is in the form `y=ax^3+bx^2+cx+d`, where `a!=0`.<br>
 			In secondary 3, you will learn that all cubic graphs have a rotational center each, but why?<br>
 			<br>
-			[Proof]<br>
-			For any cubic graph `y=ax^3+bx^2+cx+d`, let M be `(m,n)`, P be `(e,f)` and Q be `(p,q)`,where `e+p=2m` and `f+q=2n`, P and Q are on the cubic graph and `x in RR`.<br>
-			<br>
-			`f+q`<br>
-			`=ae^3+be^2+ce+d+ap^3+bp^2+cp+d`<br>
-			`=ae^3+be^2+ce+d+a(2m-e)^3+b(2m-e)^2+c(2m-e)+d`<br>
-			`=(2b+6ma)e^2-(12m^2a+4mb)e+8m^3a+4m^2b+2mc+2d`<br>
-			`n`<br>
-			`=(b+3ma)e^2-2(3m^2a+mb)e+4m^3a+2m^2b+mc+d`<br>
-			`=(b+3ma)e^2-2m(b+3ma)e+4m^3a+2m^2b+mc+d`<br>
-			For `M(m,n)` to be a fixed point, let `m=-b/(3a)`, then n is a constant.<br>
-			<br>
-			Hence for every point P on the graph of `y=ax^3+bx^2+cx+d`, there is always another point Q on the same graph which forms a segment with the midpoint `M(a,b)`, meaning that M is the rotational center of the cubic graph.
+			<a class="resHeading block causeSlideOnClick" href="javascript:void(0)" target="hint" style="color:red">[Hint]</a>
+			<div id="hint" class="hide block">
+				To prove that a graph has a rotational center, we can show that every point on the graph can find another point on the graph to form a segment so that all the segments formed have the same midpoint.<br>
+    		</div>
+			<a class="resHeading block causeSlideOnClick" href="javascript:void(0)" target="proof">[Proof]</a>
+			<div id="proof" class="hide block">
+				For any cubic graph `y=ax^3+bx^2+cx+d`, let `M` be `(m,n)`, `P` be `(e,f)` and `Q` be `(p,q)`,where `e+p=2m` and `f+q=2n`, `P` and `Q` are on the cubic graph and `x in RR`.<br>
+				<br>
+				`f+q`<br>
+				`=ae^3` `+be^2` `+ce` `+d` `+ap^3` `+bp^2` `+cp` `+d`<br>
+				`=ae^3` `+be^2` `+ce` `+d` `+a(2m-e)^3` `+b(2m-e)^2` `+c(2m-e)` `+d`<br>
+				`=(2b+6ma)e^2` `-(12m^2a+4mb)e` `+8m^3a` `+4m^2b` `+2mc` `+2d`<br>
+				`n`<br>
+				`=(b+3ma)e^2` `-2(3m^2a+mb)e` `+4m^3a` `+2m^2b` `+mc` `+d`<br>
+				`=(b+3ma)e^2` `-2m(b+3ma)e` `+4m^3a` `+2m^2b` `+mc` `+d`<br>
+				For `M(m,n)` to be a fixed point, let `m=-b/(3a)`, then `n` is a constant.<br>
+				<br>
+				Hence for every point `P` on the graph of `y=ax^3+bx^2+cx+d`, there is always another point `Q` on the same graph which forms a segment with the fixed midpoint `M(m,n)`, meaning that `M` is the rotational center of the cubic graph.<br>
+    			Did you get it? :P<br>
+    		</div>
     	</div>
     </body>
 </html>
