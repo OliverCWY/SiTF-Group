@@ -14,16 +14,28 @@
     	        text-align:center;
     	        border:1px solid #DDD;
     	    }
-    	    button#solve{
-    	        
-    	    }
     	</style>
 	</head>
 	<body>
 	    <h1 id="heading">Factorisation Tool</h1>
 	    <div>Transform the eqation into the form of `a`<sub>`0`</sub>`x^n+a`<sub>`1`</sub>`x^(n-1)+...+a`<sub>`n`</sub>`=0`, and then input `a`<sub>`0`</sub> to `a`<sub>`n`</sub> with a space between each two neighbooring numbers below:</div>
-    	<input id="value" oninput="" placeholder="Input the numbers here">
-    	<div style="text-align:center;"><button id="solve" style="width:100px">`Solve!`</button>
-    	<div>
+    	<input id="value" placeholder="Input the numbers here">
+    	<a href="javascript:solve()" id="solve" style="width:100%;text-align:center" class="block">`Solve!`</a>
+    	<div style="width:100%" id="res"></div>
+    	<script>
+    	    var coeff=[],target;
+    	    function solve(){
+    	    	var p=0,str=document.getElementById("value").value;target=document.getElementById("res");
+    	    	coeff=[];
+    	    	for(var i=0;i<str.length;i++){
+    	    		if(str[i]==' '){coeff.push(p);p=0;}
+    	    		else{
+    	    			p=p*10+parseInt(str[i]);
+    	    		}
+    	    	}
+    	    	if(p!=0)coeff.push(p);
+    	    	target.innerHTML="asdfasdg";
+    	    }
+    	</script>
     </body>
 </html>

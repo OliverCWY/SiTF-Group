@@ -6,6 +6,10 @@
     	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
     	<script>
     	    window.onload=layout;
+    	    function a(){
+    	    	setTimeout(function(){window.location.hash = "#abc";},500);
+    	    	setTimeout(function(){window.location.hash = "#";},800);
+    	    }
     	</script>
 	</head>
 	<body>
@@ -20,11 +24,11 @@
 		    Surprisingly, yes, but why?<br>
 		    <br>
 			<a class="resHeading block causeSlideOnClick" href="javascript:void(0)" target="hint" style="color:red">[Hint]</a>
-			<div id="hint" class="hide block">
+			<div id="hint" class="hide">
 				Firstly, make the coefficient of the hightest power of `x` be `1`, and then consider the product of the root and another rational number. Remember to use the property of rational numbers mentioned in Factors and Multiples!<br>
     		</div>
-			<a class="resHeading block causeSlideOnClick" href="javascript:void(0)" target="proof">[Proof]</a>
-			<div id="proof" class="hide block">
+			<a class="resHeading block causeSlideOnClick" href="#proof" target="proof">[Proof]</a>
+			<div id="proof" class="hide">
 			    For a eqation `ax^n+bx^(n-1)+...+z=0`, we divide it by `a`.<br>
 			    Then we get `x^n+b/ax^(n-1)+...+z/a=0`.<br>
 			    Considering a rational root of this eqation, `-r/s` where `r,s in ZZ and (r,s)=1`, we can transform the eqation into `(x+r/s)(x^(n-1)+Bx^(n-2)+...+Z)=0`.<br>
@@ -35,5 +39,6 @@
 			    Did you get it? :P<br>
     		</div>
     	</div>
+        <div style="height:20px"></div>
     </body>
 </html>

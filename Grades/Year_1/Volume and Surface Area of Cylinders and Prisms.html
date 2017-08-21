@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <!-- Enter the title here -->
+		<title>Volume and Surface Area</title>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+    	<script>
+    	    window.onload=layout;
+    	</script>
+	</head>
+	<body>
+	    <!-- Enter the title here -->
+	    <h1 id="heading">Volume and Surface Area</h1>
+	    <ul> 
+	        <!-- Enter the brief introduction here -->
+            <li>A <b>prism</b> is a 3-D object with two equal parallel faces(base). If all the faces excluding the base are rectangular, the prism is also known as a right prism</li>
+            <li>A <b>cylinder</b> is a 3-D object that looks like a prism except that the bases are circles, and that the cylinder has a curved lateral surface instead of parallelogram sides.</li>
+         
+        </ul>
+        <a class="causeSlideOnClick block resHeading" target="about" href="javascript:void(0)">Learning Objectives</a>
+            <!-- Enter the learning objectives here -->
+            <h6 class="hide" id="about" class="hide" style="padding: 5px;">
+                <li>Find the volume and surface area of prisms.cylinders and composite solids</li>
+                <li>Solve problems involving volume, surface area and density of these solids</li>
+            </h6>
+	    <a class="causeSlideOnClick block resHeading" target="prisms" href="javascript:void(0)">Prisms</a>
+            <!-- Enter the laws here -->
+            <h6 class="hide" id="prisms" class="hide" style="padding: 5px;">
+                <li>Volume of prism: `Base Area xx Height`</li>
+                <li>Surface area of prism: `2A + P xx H`</li>
+                
+            </h6>
+            
+       <a class="causeSlideOnClick block resHeading" target="cylinder" href="javascript:void(0)">Cylinders</a>
+            <!-- Enter the laws here -->
+            <h6 class="hide" id="cylinder" class="hide" style="padding: 5px;">
+                <li>Volume of cylinder: `pir^2h`</li>
+                <li>Surface area of cylinder: `2A + P xx H`</li>
+                <li>Curved surface area of cylinder: `2pir^2`</li>
+               
+            </h6>     
+            
+	    <a class="causeSlideOnClick block resHeading" target="questions" href="javascript:void(0)">Practice Questions</a>
+            <!-- Enter the questions here -->
+            <h6 class="hide" id="questions" class="hide" style="padding: 5px;">
+                <!-- Use of function check: check(No. of question, Answer in string form or "A","B","C","D" , Question type - 1 for fill-in-the-blank and 2 for MCQ) -->
+                <!-- Remember to change the ids -->
+                <li>The volume of a rectangular solid is 576`cm^3`.It is 24cm long 12cm broad.Find its height</li>
+                    <abbr>Answer:</abbr>
+                    <input id="ans1" type="text">
+                    <a href="javascript:check(1,'2',1)" class="rect"><b><i>Submit</i></b></a>
+                    <abbr id="res1"></abbr>
+                <li>A rectangular container measures 240cm long, 140cm wide and 100cm high. If it is 80% full of water, find the volume of water in `cm^3`.</li>
+                <abbr>Answer:</abbr>
+                    <input id="ans2" type="text">
+                    <a href="javascript:check(2,'2688000',1)" class="rect"><b><i>Submit</i></b></a>
+                    <abbr id="res2"></abbr>
+                <li>The circumference of a base of a cylinder is 22cm and its height is 8cm. Find the total surface area of the cylinder.Correct your answer to 3s.f.</li>
+                 <abbr>Answer:</abbr>
+                    <input id="ans3" type="text">
+                    <a href="javascript:check(3,'54200',1)" class="rect"><b><i>Submit</i></b></a>
+                    <abbr id="res3"></abbr>
+            </h6>
+            <a class="causeSlideOnClick block resHeading" target="answers" href="javascript:void(0)">Answers</a>
+            <!-- Enter the answers here -->
+            <h6 class="hide" id="answers" class="hide" style="padding: 5px;">
+                <li>`2`</li>
+                <li>`2688000`</li>
+                <li>`54200`</li>
+            </h6>
+        <div style="height:20px"></div>
+    </body>
+</html>

@@ -8,7 +8,7 @@ var base='  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"> \
                 <header class="mdl-layout__header"> \
                     <div class="mdl-layout__header-row"> \
                             <!-- Title --> \
-                            <span class="mdl-layout-title">Math</span> \
+                            <span class="mdl-layout-title causeSlideUpOnClick" target="searchingBox">Math</span> \
                             <div class="mdl-layout-spacer" id="_spacer"></div> \
     	                    <input id="searchingBar" placeholder="Search for topics here"></input> \
                     <div id="searchingBox" height="300px"><ul id="searchingList"></ul></div> \
@@ -17,12 +17,13 @@ var base='  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header"> \
                 <div class="mdl-layout__drawer" style="overflow-y:hidden" id="container2"> \
                     <div style="overflow-y:scroll;overflow-x:hidden" id="container1"> \
                     <a class="block" href="/" style="font-size:36px;margin-top:15px;">Home</a> \
-                    <a class="block" style="font-size:36px" target="y1" href="javascript:void(0);" id="y_1">Year 1</a> \
+                    <a class="block" style="font-size:36px" target="y1" href="javascript:void(0);" id="y_1">Topics</a> \
                     <div id="y1" class="hide"></div>\
-                    <a class="block" style="font-size:36px" target="y2" href="javascript:void(0);" id=y_2>Year 2</a> \
+                    <a class="block hide" style="font-size:36px;display" target="y2" href="javascript:void(0);" id=y_2>Year 2</a> \
                     <div id="y2" class="hide"></div>\
                     <a class="block" href="/search.html" style="font-size:36px">Search</a> \
-                    <a class="block" href="/Tools/" style="font-size:30px">Maths Tools</a> \
+                    <a class="block" href="/Formulae.html" style="font-size:36px">Formulae</a> \
+                    <a class="block" href="/Tools/" style="font-size:36px">Maths Tools</a> \
                     <a class="block" href="/FurtherReadings/" style="font-size:30px">FurtherReadings</a> \
                     </div> \
                 </div> \

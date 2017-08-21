@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <!-- Enter the title here -->
+		<title>Statistics</title>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+    	<script>
+    	    window.onload=layout;
+    	</script>
+	</head>
+	<body>
+	    <!-- Enter the title here -->
+	    <h1 id="heading">STATISTICS</h1>
+	    <ul> 
+	        <!-- Enter the brief introduction here -->
+            <li>Statistics, in brief terms, is a collection of mathematical techniques that enable us to analyze and present data. </li>
+            <li>Mean, median, and mode are three kinds of "averages". There are many "averages" in statistics, but these are the most common, and are certainly the three you are most likely to encounter, if the topic comes up at all.</li>
+        </ul>
+
+        <a class="causeSlideOnClick block resHeading" target="about" href="javascript:void(0)">Learning Objectives</a>
+            <!-- Enter the learning objectives here -->
+            <h6 class="hide" id="about" class="hide" style="padding: 5px;">
+                <li>Interpret and represent data in the form of a Pictogram, Pie Chart, Bar Graph, Dot Diagram, Frequency Table</li>
+                <li>Analyze data by finding the mean, median and mode of a set of data</li>
+                <li>Find unknowns in a frequency table given mean, median and mode</li>
+                <li>Find the range of values of the unknowns in a frequency table given the median or mode</li>
+            </h6>
+	    <a class="causeSlideOnClick block resHeading" target="mean" href="javascript:void(0)">Mean</a>
+            <!-- Enter the laws here -->
+            <h6 class="hide" id="mean" class="hide" style="padding: 5px;">
+                <li>Mean is simply the average that we all know.</li>
+                <li>We sum up all the raw data and divide the value by the number of subjects we have.</li>
+                <li>For example, say we have 8 students, each having test scores in increments of 10. Their mean score would be:<br>
+                `(10+20+30+40+50+60+70+80+90+100)/10 = 55`</li>
+                
+            </h6>
+        <a class="causeSlideOnClick block resHeading" target="median" href="javascript:void(0)">Median</a>
+            <!-- Enter the laws here -->
+            <h6 class="hide" id="median" class="hide" style="padding: 5px;">
+                <li>The median is the <b>"middle measure"</b> when all measures are arranged in order of magnitude(ascending or descending order)</li>
+                <li>When the number of measures are <b>odd</b>, the median is simply the middle measure. For example,<br>
+                the median of `2,3,4,5,6,7` is `4`</li>
+                <li>However when the number of measures are <b>even</b>, the median is the average of the two middle measures. For example,<br>the median of `10,11,12,13,14,15` is `(12+13)/2 = 12.5`</li>
+            </h6>
+        <a class="causeSlideOnClick block resHeading" target="mode" href="javascript:void(0)">Mode</a>
+            <!-- Enter the laws here -->
+            <h6 class="hide" id="mode" class="hide" style="padding: 5px;">
+                <li>The mode is the measure that has the highest frequency</li>
+                <li>For example, the mode for this set of data: `56,45,78,34,12,45,34,45,66`<br>
+                is `45`.</li>
+            </h6>
+	    <a class="causeSlideOnClick block resHeading" target="questions" href="javascript:void(0)">Practice Questions</a>
+            <!-- Enter the questions here -->
+            <h6 class="hide" id="questions" class="hide" style="padding: 5px;">
+                <li>Find the median of `1,2,3,4,4,5,5,5,6,7,8`</li>
+                 <abbr>Answer:</abbr>
+                    <input id="ans1" type="text">
+                    <a href="javascript:check(1,'5',1)" class="rect"><b><i>Submit</i></b></a>
+                    <i><u id="res1"></u></i>
+                <li>The mean of a and b is `5`, the mean of a,b,c,d and e is `23`. Find the mean of c,d and e.</li>
+                 <abbr>Answer:</abbr>
+                    <input id="ans2" type="text">
+                    <a href="javascript:check(2,'105',1)" class="rect"><b><i>Submit</i></b></a>
+                    <i><u id="res2"></u></i>
+                <li>The median of the numbers `6,7,10,23,x,34,67,76` is 22. Find `x`. </li>
+                 <abbr>Answer:</abbr>
+                    <input id="ans3" type="text">
+                    <a href="javascript:check(3,'21',1)" class="rect"><b><i>Submit</i></b></a>
+                    <i><u id="res3"></u></i>
+            </h6>
+            <a class="causeSlideOnClick block resHeading" target="answers" href="javascript:void(0)">Answers</a>
+            <!-- Enter the answers here -->
+            <h6 class="hide" id="answers" class="hide" style="padding: 5px;">
+                <li>`5`</li>
+                <li>`105`</li>
+                <li>`21`</li>
+            </h6>
+        <div style="height:20px"></div>
+    </body>
+</html>

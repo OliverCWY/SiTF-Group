@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <!-- Enter the title here -->
+		<title>Percentage</title>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+    	<script>
+    	    window.onload=layout;
+    	</script>
+	</head>
+	<body>
+	    <!-- Enter the title here -->
+	    <h1 id="heading">PERCENTAGE</h1>
+	    <ul> 
+	        <!-- Enter the brief introduction here -->
+            <li>In general, `x%` is expressed as `x/100`.</li> 
+            <li>One quantity can only be compared with another quantity if they are of the same unit. For example, 1 yuan is not the same as S$1.</li>
+        </ul>
+
+        <a class="causeSlideOnClick block resHeading" target="about" href="javascript:void(0)">Learning Objectives</a>
+            <!-- Enter the learning objectives here -->
+            <h6 class="hide" id="about" class="hide" style="padding: 5px;">
+                <li>Percentage increase/decrease in buying and selling goods and services.</li>
+                <li>Percentage increase and decrease in value of goods and services relative to time.</li>
+                <li>Simple interest and Compound interest savings.</li>
+                
+            </h6>
+	    <a class="causeSlideOnClick block resHeading" target="profitloss" href="javascript:void(0)">Profit and Loss</a>
+            <!-- Enter the laws here -->
+            <h6 class="hide" id="profitloss" class="hide" style="padding: 5px;">
+                <li>To compare profits or losses gained from buying and selling of different things, we express it as a percentage of the cost price of the item.</li>
+                <li>If Total sale price > Total cost price, there will be a percentage increase in profit. It is expressed by<br>
+                <b>(Total Sale - Total Cost)`-:`Total Cost `xx` 100%</b></li>
+                <li>If Total cost price > Total sale price, there will be a percentage loss. It is expressed by<br>
+                <b>(Total Cost - Total Sale)`-:`Total Cost `xx` 100%</b></li>
+                
+            </h6>
+            
+        <a class="causeSlideOnClick block resHeading" target="gst" href="javascript:void(0)">Discount,Service Charge and GST</a>
+            <!-- Enter the laws here -->
+            <h6 class="hide" id="gst" class="hide" style="padding: 5px;">
+                <li>Discount: Discount `xx` Listed Price</li>
+                <li>Service Charge: Service Charge(Usually 10%) `xx` Listed Price</li>
+                <li>GST: Goods and Services Tax(Currently 7%) `xx` Listed Price</li>
+                <li>Final Price: Listed Price `-` Discount `+` Service Charge `+` GST</li>
+                
+            </h6>
+            
+        <a class="causeSlideOnClick block resHeading" target="simple" href="javascript:void(0)">Simple and Compound Interest</a>
+            <!-- Enter the laws here -->
+            <h6 class="hide" id="simple" class="hide" style="padding: 5px;">
+                <li>Simple interest is a type of interest that is applied to the amount borrowed or invested for the entire duration of the loan, without taking any other factors into account, such as past interest (paid or charged) or any other financial considerations. The formula for simple interest is:</li>
+                <center><abbr style="font-size:20px">`I=PRT`</abbr><br> where `P=`principal, `R=`interest rate and `T=`time in years.</center>
+                <li>For example, if you deposited $1000 in a savings account, how much more money will you receive after 5 years if the bank pays 2% simple interest annually?<br>
+                You would receive 10% of $1000 as simple interest.</li>
+                <li>Compound interest is the addition of interest to the principal sum of a loan or deposit, or in other words, interest on interest. The formula for compound interest is: </li>
+                <center><abbr style="font-size:20px">`I=P(1+r/n)^(nt)`</abbr><br> where `P=`principal amount, `r=`annual interest rate, `n=`number of times the interest is compounded each year and `t=`number of years.</center>
+                    
+                </h6>
+        
+	    <a class="causeSlideOnClick block resHeading" target="questions" href="javascript:void(0)">Practice Questions</a>
+            <!-- Enter the questions here -->
+            <h6 class="hide" id="questions" class="hide" style="padding: 5px;">
+                <li>The populaton of Lazytown increased by 10% two years ago and then decreased by 10% in the last year. Their population is now 15000. What was the population of Lazytown two years ago?</li>
+                 <abbr>Answer:</abbr>
+                    <input id="ans1" type="text">
+                    <a href="javascript:check(1,'15000',1)" class="rect"><b><i>Submit</i></b></a>
+                    <i><u id="res1"></u></i>
+                <li>Calculate the amount of money received by investing $20000p for 9 months at 2% per annum if the interest is compounded monthly.</li>
+                 <abbr>Answer:</abbr>
+                    <input id="ans2" type="text">
+                    <a href="javascript:check(2,'20302.01',1)" class="rect"><b><i>Submit</i></b></a>
+                    <i><u id="res2"></u></i>
+            </h6>
+            <a class="causeSlideOnClick block resHeading" target="answers" href="javascript:void(0)">Answers</a>
+            <!-- Enter the answers here -->
+            <h6 class="hide" id="answers" class="hide" style="padding: 5px;">
+                <li>`15000`</li>
+                <li>`20302.01`</li>
+                
+            </h6>
+        <div style="height:20px"></div>
+    </body>
+</html>

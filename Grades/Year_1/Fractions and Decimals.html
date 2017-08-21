@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <!-- Enter the title here -->
+		<title>Fractions and Decimals</title>
+    	<script src="/javascripts/nmInclude.js"></script>
+    	<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML"></script>
+    	<script>
+    	    window.onload=layout;
+    	</script>
+	</head>
+	<body>
+	    <!-- Enter the title here -->
+	    <h1 id="heading">Fractions and Decimals</h1>
+	    <ul> 
+	        <!-- Enter the brief introduction here -->
+            <li>A fraction is a number that can be written as `a/b`, `b != 0`.</li>
+            <li>A decimal is a number written using a decimal point.</li>
+            <li>A <b>terminating decimal</b> is a decimal number which has digits that terminate(do not go on forever)
+            For example, `1/5 = 0.2`.<br>
+            On the other hand, a decimal which does not terminate is called a <b>non-terminating decimal</b>. For example, `1/3` and `1/7` are non-terminating decimals.</li>
+            <li>If the digits after a decimal point in a non-terminating decimal repeat themselves in a pattern, it is called a <b>recurring decimal</b>, if they do not repeat in a pattern, it is called a <b>non-recurring decimal</b>.</li>
+            
+            
+        </ul>
+        <a class="causeSlideOnClick block resHeading" target="about" href="javascript:void(0)">Learning Objectives</a>
+            <!-- Enter the learning objectives here -->
+            <h6 class="hide" id="about" class="hide" style="padding: 5px;">
+                <li>Identify proper and improper fractions, equivalent fractions, unit fractions, terminating decimals, non terminating(recurring) decimals.</li>
+                <li>Evaluate numerical expressions involving fractions and decimals.</li>
+                <li>Predict if a fraction is equivalent to a recurring or terminating decimal.</li>
+                <li>Convert a recurring decimal to a fraction and vice versa.</li>
+            </h6>
+	    
+	    <a class="causeSlideOnClick block resHeading" target="questions" href="javascript:void(0)">Practice Questions</a>
+            <!-- Enter the questions here -->
+            <h6 class="hide" id="questions" class="hide" style="padding: 5px;">
+                <!-- Use of function check: check(No. of question, Answer in string form or "A","B","C","D" , Question type - 1 for fill-in-the-blank and 2 for MCQ) -->
+                <!-- Remember to change the ids -->
+                <li>`9/8+3/4-1/2`</li>
+                    <abbr>Answer:</abbr>
+                    <input id="ans1" type="text">
+                    <a href="javascript:check(1,'11/8',1)" class="rect"><b><i>Submit</i></b></a>
+                    <abbr id="res1"></abbr>
+                <li>`(1/3+5)/3`</li>
+                     <abbr>Answer:</abbr>
+                    <input id="ans2" type="text">
+                    <a href="javascript:check(2,'16/3',1)" class="rect"><b><i>Submit</i></b></a>
+                    <abbr id="res2"></abbr>
+                <li>Convert 0.1818... as a fraction of form `p/q` where q !`!=` 0 and p,q are integers.</li>
+                 <abbr>Answer:</abbr>
+                    <input id="ans3" type="text">
+                    <a href="javascript:check(3,'2/11',1)" class="rect"><b><i>Submit</i></b></a>
+                    <abbr id="res3"></abbr>
+            </h6>
+            <a class="causeSlideOnClick block resHeading" target="answers" href="javascript:void(0)">Answers</a>
+            <!-- Enter the answers here -->
+            <h6 class="hide" id="answers" class="hide" style="padding: 5px;">
+                <li>`11/8`</li>
+                <li>`16/3`</li>
+                <li>`2/11`</li>
+            </h6>
+        <div style="height:20px"></div>
+    </body>
+</html>

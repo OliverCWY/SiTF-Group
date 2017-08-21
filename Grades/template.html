@@ -20,31 +20,47 @@
         </ul>
         <a class="causeSlideOnClick block resHeading" target="about" href="javascript:void(0)">Learning Objectives</a>
             <!-- Enter the learning objectives here -->
-            <h6 class="block hide" id="about" class="hide" style="padding: 5px;">
+            <h6 class="hide" id="about" class="hide" style="padding: 5px;">
                 <li></li>
                 <li></li>
                 <li></li>
             </h6>
 	    <a class="causeSlideOnClick block resHeading" target="laws" href="javascript:void(0)">Arithmetic Laws</a>
             <!-- Enter the laws here -->
-            <h6 class="block hide" id="laws" class="hide" style="padding: 5px;">
+            <h6 class="hide" id="laws" class="hide" style="padding: 5px;">
                 <li></li>
                 <li></li>
                 <li></li>
             </h6>
 	    <a class="causeSlideOnClick block resHeading" target="questions" href="javascript:void(0)">Practice Questions</a>
             <!-- Enter the questions here -->
-            <h6 class="block hide" id="questions" class="hide" style="padding: 5px;">
+            <h6 class="hide" id="questions" class="hide" style="padding: 5px;">
+                <!-- Use of function check: check(No. of question, Answer in string form or "A","B","C","D" , Question type - 1 for fill-in-the-blank and 2 for MCQ) -->
+                <!-- Remember to change the ids -->
                 <li></li>
+                    <abbr>Answer:</abbr>
+                    <input id="ans1" type="text">
+                    <input type="submit" value="Submit" onclick="check(1,Answer,1)">
+                    <abbr id="res1"></abbr>
                 <li></li>
+                    <div id="ans2" style="float:left">
+                        <abbr>Answer:</abbr>
+                        <input type="radio" value="A" name="ans2">A
+                        <input type="radio" value="B" name="ans2">B
+                        <input type="radio" value="C" name="ans2">C
+                        <input type="radio" value="D" name="ans2">D
+                        <input type="submit" value="Submit" onclick="check(2,Answer,2)">
+                        <abbr id="res2"></abbr>
+                    </div><br>
                 <li></li>
             </h6>
             <a class="causeSlideOnClick block resHeading" target="answers" href="javascript:void(0)">Answers</a>
             <!-- Enter the answers here -->
-            <h6 class="block hide" id="answers" class="hide" style="padding: 5px;">
+            <h6 class="hide" id="answers" class="hide" style="padding: 5px;">
                 <li></li>
                 <li></li>
                 <li></li>
             </h6>
+        <div style="height:20px"></div>
     </body>
 </html>

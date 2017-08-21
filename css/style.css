@@ -86,3 +86,10 @@
 	top: 55px;
 	left: 50px;
 }
+h6.hide{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.blockInline{
+	display:block inline;
+}

@@ -9,6 +9,14 @@ div#drawer{
 .block:hover{
     background-color:#DDD;
 }
+.rect{
+	display:block inline;
+	text-decoration:none;
+	color:black;
+}
+.rect:hover{
+    background-color:#DDD;
+}
 .big{
     font-size:36px;
 }

@@ -14,18 +14,31 @@ var searchWidth="300px";
 oliverC.refresh=function(){
     $(".causeSlideDownOnClick").click(function(){
         $("#"+$(this).attr("target")).slideDown(500);
-    });
+        {$('html, body').animate({  
+            scrollTop: $("#"+$(this).attr("target")).offset().top  
+            }, 2000);  
+    }});
     $(".causeSlideUpOnClick").click(function(){
         $("#"+$(this).attr("target")).slideUp(500);
+        $('html, body').animate({  
+            scrollTop: oliverC.getTop($("#"+$(this).attr("target")))  
+            }, 2000);  
     });
     $(".causeSlideOnClick").click(function(){
         var obj=$("#"+$(this).attr("target"));
-        if(obj.css("display")=="none")obj.slideDown(500);
-        else obj.slideUp(500);
+        if(obj.css("display")=="none"){
+            obj.slideDown(500);
+            $('html, body').animate({  
+                scrollTop: $("#"+$(this).attr("target")).offset().top  
+                }, 2000);  
+        }else obj.slideUp(500);
     });
     $(".causeSlideOnMouse").on({
         mouseenter:function(){
             $("#"+$(this).attr("target")).slideDown(500);
+            $('html, body').animate({  
+                scrollTop: $("#"+$(this).attr("target")).offset().top  
+                }, 2000); 
         },
         mouseleave:function(){
             $("#"+$(this).attr("target")).slideUp(500);
@@ -77,6 +90,12 @@ oliverC.resize=function(){
 }
 oliverC.block=function(){
     var objs=document.getElementsByClassName("block"),obj;
+    for(var i=0;i<objs.length;i++){
+        obj=objs[i];
+        obj.style.padding=parseInt($(obj).css("font-size"))*0.4+"px";
+        obj.style.marginTop="0px";
+    }
+    objs=document.getElementsByClassName("rect");
     for(var i=0;i<objs.length;i++){
         obj=objs[i];
         obj.style.padding=parseInt($(obj).css("font-size"))*0.4+"px";
